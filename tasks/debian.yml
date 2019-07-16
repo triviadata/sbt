@@ -1,0 +1,19 @@
+---
+- name: Install apt-transport-https
+  apt:
+    name: apt-transport-https
+
+- name: Add APT key for SBT
+  apt_key:
+    keyserver: "{{ sbt_apt_keyserver }}"
+    id: "{{ sbt_apt_key_id }}"
+
+- name: Add APT repository for SBT
+  apt_repository:
+    repo: "{{ sbt_apt_repository }}"
+    filename: sbt
+
+- name: Install sbt
+  apt:
+    name: sbt
+    update_cache: true

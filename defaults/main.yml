@@ -1,0 +1,6 @@
+---
+sbt_yum_repository: "https://sbt.bintray.com/rpm"
+
+sbt_apt_repository: "deb https://dl.bintray.com/sbt/debian /"
+sbt_apt_keyserver: keyserver.ubuntu.com
+sbt_apt_key_id: 2EE0EA64E40A89B84B2DF73499E82A75642AC823

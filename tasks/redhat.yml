@@ -1,0 +1,14 @@
+---
+- name: Add YUM repository for SBT
+  yum_repository:
+    name: bintray--sbt-rpm
+    file: sbt
+    baseurl: "{{ sbt_yum_repository }}"
+    enabled: yes
+    gpgcheck: no
+    description: "YUM repository for SBT"
+
+- name: Install sbt
+  yum:
+    name: sbt
+    update_cache: true

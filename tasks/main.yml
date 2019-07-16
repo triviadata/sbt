@@ -1,0 +1,8 @@
+---
+- name: Install SBT on RedHat system
+  include_tasks: redhat.yml
+  when: ansible_os_family == "RedHat"
+
+- name: Install SBT on Debian system
+  include_tasks: debian.yml
+  when: ansible_os_family == "Debian"
