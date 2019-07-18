@@ -1,15 +1,16 @@
 SBT
 =========
 
+[![Build Status](https://travis-ci.com/triviadata/ansible-sbt.svg?branch=master)](https://travis-ci.com/triviadata/ansible-sbt)
+
 Install SBT on Linux host.
 
 Requirements
-------------
+--------------
 None.
 
 Role Variables
 --------------
-
 Variables are listed in `defaults/main.yml` and desribed below:
 
 * **sbt_yum_repository**: URL address for YUM repository
@@ -18,7 +19,7 @@ Variables are listed in `defaults/main.yml` and desribed below:
 * **sbt_apt_key_id**: identifier of the key for APT repository
 
 Dependencies
-------------
+----------------
 None.
 
 Example Playbook
@@ -34,5 +35,5 @@ License
 BSD
 
 Author Information
-------------------
+-------
 This role was created in July 2019 by Matus Cuper
