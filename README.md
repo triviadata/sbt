@@ -1,7 +1,7 @@
 SBT
 =========
 
-[![Build Status](https://travis-ci.com/triviadata/sbt.svg?branch=master)](https://travis-ci.com/triviadata/sbt)
+[![Build Status](https://travis-ci.com/triviadata/ansible-sbt.svg?branch=master)](https://travis-ci.com/triviadata/ansible-sbt)
 
 Install SBT on Linux host.
 
