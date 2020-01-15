@@ -3,13 +3,13 @@ sudo: false
 
 language: python
 
-python: 2.7
+python: 3.8
 
 services: docker
 
 install:
-  - pip install ansible==2.7.7
-  - pip install testinfra molecule docker
+  - pip3 install ansible
+  - pip3 install testinfra molecule docker
 
 before_script:
   - cd ../
